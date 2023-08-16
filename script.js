@@ -1,8 +1,8 @@
 const images = [
-    "images/IMG_0145.jpg",
-    "images/IMG_0146.jpg",
-    "images/IMG_0147.jpg",
-    "images/IMG_0148.jpg"
+    "images/IMG_0145.JPG",
+    "images/IMG_0146.JPG",
+    "images/IMG_0147.JPG",
+    "images/IMG_0148.JPG"
 ];
 
 const image = document.getElementById('image');
