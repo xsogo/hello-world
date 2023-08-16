@@ -34,6 +34,7 @@ body {
     cursor: pointer; /* 鼠标指针为手型 */
     border-radius: 5px; /* 添加圆角边框 */
     margin-right: 10px; /* 右侧留出一些间距 */
+    margin-left: 10px; /* 左侧留出一些间距 */
 }
 
 /* 进度条容器样式 */
@@ -43,6 +44,6 @@ body {
 
 /* 进度条样式 */
 input[type="range"] {
-    width: 50%; /* 水平方向填满容器 */
+    width: 100%; /* 水平方向填满容器 */
     margin-top: 10px; /* 上方留出一些间距 */
 }
