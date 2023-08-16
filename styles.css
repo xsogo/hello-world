@@ -17,11 +17,11 @@ body {
     margin-bottom: 20px; /* 下方留出一些间距 */
 }
 
-/* 控制按钮和进度条容器样式 */
+/* 控制按钮容器样式 */
 .controls {
     display: flex; /* 使用弹性盒子布局 */
     align-items: center; /* 在容器中垂直居中 */
-    flex-direction: column; /* 控制按钮和进度条在纵向排列 */
+    margin-bottom: 10px; /* 下方留出一些间距 */
 }
 
 /* 播放按钮样式 */
@@ -33,11 +33,11 @@ body {
     padding: 10px 20px; /* 内边距上下为10px，左右为20px */
     cursor: pointer; /* 鼠标指针为手型 */
     border-radius: 5px; /* 添加圆角边框 */
-    margin-bottom: 10px; /* 下方留出一些间距 */
+    margin-right: 10px; /* 右侧留出一些间距 */
 }
 
 /* 进度条样式 */
 input[type="range"] {
     width: 100%; /* 水平方向填满容器 */
+    margin-top: 10px; /* 上方留出一些间距 */
 }
-
