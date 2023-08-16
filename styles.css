@@ -36,6 +36,11 @@ body {
     margin-right: 10px; /* 右侧留出一些间距 */
 }
 
+/* 进度条容器样式 */
+.progress-container {
+    width: 100%; /* 水平方向填满容器 */
+}
+
 /* 进度条样式 */
 input[type="range"] {
     width: 100%; /* 水平方向填满容器 */
