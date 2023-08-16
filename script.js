@@ -6,8 +6,10 @@ const images = [
     "https://github.com/xsogo/hello-world/blob/master/images/IMG_0166.JPG"
 ];
 
+
 const image = document.getElementById('image');
 const playButton = document.getElementById('play-button');
+const pauseButton = document.getElementById('pause-button');
 const progressBar = document.getElementById('progress-bar');
 
 let isPlaying = false;
@@ -15,15 +17,18 @@ let progressInterval;
 let currentImageIndex = 0;
 
 playButton.addEventListener('click', togglePlay);
+pauseButton.addEventListener('click', togglePlay);
 progressBar.addEventListener('input', updateProgress);
 
 function togglePlay() {
     if (isPlaying) {
         clearInterval(progressInterval);
-        playButton.textContent = 'Play';
+        playButton.style.display = 'inline-block';
+        pauseButton.style.display = 'none';
     } else {
         progressInterval = setInterval(updateProgressBar, 1000);
-        playButton.textContent = 'Pause';
+        playButton.style.display = 'none';
+        pauseButton.style.display = 'inline-block';
     }
     isPlaying = !isPlaying;
 }
