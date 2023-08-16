@@ -18,7 +18,7 @@ body {
 .controls {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    flex-direction: column; /* 控制按钮和进度条在纵向排列 */
 }
 
 .play-button {
@@ -29,7 +29,7 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-    margin-right: 10px;
+    margin-bottom: 10px; /* 添加一些下方间距 */
 }
 
 input[type="range"] {
