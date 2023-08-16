@@ -1,9 +1,9 @@
 const images = [
-    "https://github.com/xsogo/hello-world/blob/master/images/IMG_0145.JPG",
-    "https://github.com/xsogo/hello-world/blob/master/images/IMG_0146.JPG",
-    "https://github.com/xsogo/hello-world/blob/master/images/IMG_0147.JPG",
-    "https://github.com/xsogo/hello-world/blob/master/images/IMG_0148.JPG",
-    "https://github.com/xsogo/hello-world/blob/master/images/IMG_0166.JPG"
+    "images/IMG_0145.JPG",
+    "images/IMG_0146.JPG",
+    "images/IMG_0147.JPG",
+    "images/IMG_0148.JPG",
+    "images/IMG_0166.JPG"
 ];
 
 
