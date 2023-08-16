@@ -2,35 +2,17 @@
 <html>
 <head>
     <title>Image Player</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        #image-container {
-            position: relative;
-            width: 80%;
-            max-width: 800px;
-            margin-bottom: 20px;
-        }
-
-        #play-button {
-            margin-right: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="image-container">
         <img id="image" src="" alt="Image">
-        <button id="play-button">Play</button>
+        <button id="play-button" class="play-button">▶</button>
+        <button id="pause-button" class="pause-button">||</button>
         <input type="range" id="progress-bar" min="0" max="4" value="0">
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
