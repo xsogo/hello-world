@@ -15,7 +15,13 @@ body {
     margin-bottom: 20px;
 }
 
-.play-button, .pause-button {
+.controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.play-button {
     font-size: 20px;
     background-color: #3498db;
     color: white;
@@ -23,14 +29,7 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-}
-
-.play-button {
-    display: inline-block;
-}
-
-.pause-button {
-    display: none;
+    margin-right: 10px;
 }
 
 input[type="range"] {
