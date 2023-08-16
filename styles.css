@@ -44,6 +44,6 @@ body {
 
 /* 进度条样式 */
 input[type="range"] {
-    width: 100%; /* 水平方向填满容器 */
+    width: 50%; /* 水平方向填满容器 */
     margin-top: 10px; /* 上方留出一些间距 */
 }
