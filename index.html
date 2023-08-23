@@ -1,56 +1,49 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Image Slideshow</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- 加载您的自定义样式表 -->
-</head>
-<body>
-<div class="main-container">
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 
-        <!-- Full-width images -->
-        <div class="mySlides fade">
-            <!-- 使用相对路径引用图片 -->
-            <img src="images/IMG_0145.JPG" style="width:100%" />
-        </div>
-        <!-- 添加更多的图片幻灯片 -->
-         <div class="mySlides fade">
-            <!-- 使用相对路径引用图片 -->
-            <img src="images/IMG_0146.JPG" style="width:100%" />
-        </div>
-         <div class="mySlides fade">
-            <!-- 使用相对路径引用图片 -->
-            <img src="images/IMG_0147.JPG" style="width:100%" />
-        </div>
-         <div class="mySlides fade">
-            <!-- 使用相对路径引用图片 -->
-            <img src="images/IMG_0148.JPG" style="width:100%" />
-        </div>
+<div class="main-container">  
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
 
-        <!-- Next and previous buttons -->
-        <!-- ... 按钮代码 ... -->
-        <div id="myProgress">
-            <div id="myBar"></div>
-        </div>
+    <!-- Full-width images -->
+    <div class="mySlides fade">
+      <!--   Slide 01   -->
+      <img src="images/IMG_0145.JPG" style="width:100%" />
     </div>
-    <br>
 
-    <div class="text" id="slide-number">Caption Three</div>
-
-    <!-- The dots/circles -->
-    <!-- ... 按钮代码 ... -->
-     <div class="slider-controls" style="text-align:center">
-        <div class="controls-container">
-            <button class="controls prev" onclick="plusSlides(-1)"><i class="fa fa-backward"></i></button>
-            <button class="controls pause" onclick="playPauseHandler()"><i id="play-pause-icon" class="fa fa-pause"></i></button>
-            <button class="controls next" onclick="plusSlides(1)"><i class="fa fa-forward"></i></button>
-        </div>
+    <div class="mySlides fade">
+      <!--   Slide 02   -->
+      <img src="images/IMG_0146.JPG" style="width:100%">
     </div>
+
+    <div class="mySlides fade">
+      <!--   Slide 03   -->
+      <img src="images/IMG_0147.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <!--   Slide 04   -->
+      <img src="images/IMG_0148.JPG" style="width:100%">
+    </div>
+
+
+    <!-- Next and previous buttons -->
+    <!--   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+  </div>
+  <br>
+
+  <div class="text" id="slide-number">Caption Three</div>
+
+  <!-- The dots/circles -->
+  <div class="slider-controls" style="text-align:center">
+
+    <div class="controls-container">
+      <button class="controls prev" onclick="plusSlides(-1)"><i class="fa fa-backward"></i></button>
+      <button class="controls pause" onclick="playPauseHandler()"><i id="play-pause-icon" class="fa fa-pause"></i></button>
+      <button class="controls next" onclick="plusSlides(1)"><i class="fa fa-forward"></i></button></div>
+  </div>
 </div>
-
-<script src="script.js"></script> <!-- 加载您的 JavaScript 文件 -->
-</body>
-</html>
