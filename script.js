@@ -6,6 +6,16 @@ var intervalDuration = 5000; // 幻灯片切换间隔时间（毫秒）
 var i = 0;
 const presentationSize = document.getElementsByClassName("mySlides").length;
 const playPauseButtonIcon = document.getElementById("play-pause-icon");
+// Fetch GitHub API to get the list of image files
+fetch("https://api.github.com/repos/xsogo/hello-world/contents/images")
+    .then(response => response.json())
+    .then(data => {
+        presentationSize = data.length;
+        showSlides(slideIndex, data);
+    })
+    .catch(error => {
+        console.error("Error fetching image file list:", error);
+    });
 showSlides(slideIndex);
 
 // 下一页/上一页控制
