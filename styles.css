@@ -1,49 +1,23 @@
-/* 全局样式 */
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
     margin: 0;
-    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* 图片容器样式 */
-#image-container {
-    position: relative; /* 使图片容器成为相对定位的参考点 */
-    width: 80%; /* 设置图片容器的宽度 */
-    max-width: 800px; /* 设置最大宽度以保持响应式布局 */
-    margin-bottom: 20px; /* 下方留出一些间距 */
+.slideshow-container {
+    max-width: 450px;
+    margin: auto;
 }
 
-/* 控制按钮容器样式 */
-.controls {
-    display: flex; /* 使用弹性盒子布局 */
-    align-items: center; /* 在容器中垂直居中 */
-    margin-bottom: 10px; /* 下方留出一些间距 */
+.mySlides {
+    display: none;
 }
 
-/* 播放按钮样式 */
-.play-button {
-    font-size: 20px; /* 设置字体大小 */
-    background-color: #3498db; /* 背景颜色为蓝色 */
-    color: white; /* 字体颜色为白色 */
-    border: none; /* 去除边框 */
-    padding: 10px 20px; /* 内边距上下为10px，左右为20px */
-    cursor: pointer; /* 鼠标指针为手型 */
-    border-radius: 5px; /* 添加圆角边框 */
-    margin-right: 10px; /* 右侧留出一些间距 */
-    margin-left: 10px; /* 左侧留出一些间距 */
-}
-
-/* 进度条容器样式 */
-.progress-container {
-    width: 100%; /* 水平方向填满容器 */
-}
-
-/* 进度条样式 */
-input[type="range"] {
-    width: 50%; /* 水平方向填满容器 */
-    margin-top: 10px; /* 上方留出一些间距 */
-}
+/* Rest of your styles... */
