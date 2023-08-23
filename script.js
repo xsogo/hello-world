@@ -2,29 +2,19 @@ var slideIndex = 1;
 var playPause = true;
 var timerVar;
 var scrubberVar;
-var intervalDuration = 5000; // 幻灯片切换间隔时间（毫秒）
+var intervalDuration = 5000;
 var i = 0;
 const presentationSize = document.getElementsByClassName("mySlides").length;
 const playPauseButtonIcon = document.getElementById("play-pause-icon");
-// Fetch GitHub API to get the list of image files
-fetch("https://api.github.com/repos/xsogo/hello-world/contents/images")
-    .then(response => response.json())
-    .then(data => {
-        presentationSize = data.length;
-        showSlides(slideIndex, data);
-    })
-    .catch(error => {
-        console.error("Error fetching image file list:", error);
-    });
+showSlides(slideIndex);
 
-// 下一页/上一页控制
+// Next/previous controls
 function plusSlides(n) {
   clearTimeout(timerVar);
   clearInterval(scrubberVar);
   showSlides((slideIndex += n));
 }
 
-// 播放/暂停按钮处理
 function playPauseHandler() {
   playPause = !playPause;
   if (playPause) {
@@ -38,12 +28,10 @@ function playPauseHandler() {
   }
 }
 
-// 自动播放函数
 function autoplay() {
   showSlides((slideIndex += 1));
 }
 
-// 移动进度条函数
 function moveScrubber(barFill) {
   if (barFill == 0) {
     clearInterval(scrubberVar);
@@ -64,7 +52,6 @@ function moveScrubber(barFill) {
   }
 }
 
-// 显示幻灯片
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
