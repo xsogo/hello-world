@@ -16,7 +16,6 @@ fetch("https://api.github.com/repos/xsogo/hello-world/contents/images")
     .catch(error => {
         console.error("Error fetching image file list:", error);
     });
-showSlides(slideIndex);
 
 // 下一页/上一页控制
 function plusSlides(n) {
